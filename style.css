@@ -1,0 +1,22 @@
+:root {
+    --real-black: rgb(30, 30, 30);
+}
+h1.title {
+    text-align: center;
+}
+
+table {
+    margin: auto;
+    border-collapse: collapse;
+    border-spacing: 0px;
+}
+
+table,
+th,
+td {
+    border: 1px solid var(--real-black);
+}
+
+.thead {
+    text-align: center;
+}
