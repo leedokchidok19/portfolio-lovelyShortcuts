@@ -1,6 +1,16 @@
 :root {
     --real-black: rgb(30, 30, 30);
 }
+
+#container,
+footer {
+    margin: auto;
+    max-width: 800px;
+    max-height: 600px;
+    min-width: 400px;
+    min-height: 300px;
+}
+
 h1.title {
     text-align: center;
 }
@@ -11,6 +21,11 @@ table {
     border-spacing: 0px;
 }
 
+table > caption {
+    padding: 0.25rem;
+    font-size: 1.25rem;
+}
+
 table,
 th,
 td {
@@ -19,4 +34,18 @@ td {
 
 .thead {
     text-align: center;
+}
+
+.sns ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.sns ul > li {
+    margin: 0 1vw;
+}
+
+.sns i.fab {
+    font-size: 1.5rem;
 }
