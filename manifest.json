@@ -1,8 +1,8 @@
 {
   "manifest_version": 2,
  
-  "name": "FrequencyOf",
-  "description": "My lovely words",
+  "name": "lovelyShortcut",
+  "description": "You don't have to wander through the shortcut page and it will save you time.",
   "version": "1.0",
  
   "browser_action": {
