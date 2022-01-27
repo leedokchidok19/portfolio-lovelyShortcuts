@@ -8,6 +8,7 @@ chrome.tabs.executeScript({
 });
 */
 
+/*
 function matching(user){
   chrome.tabs.executeScript({
     code: 'document.querySelector("body").innerText'
@@ -51,3 +52,52 @@ document.querySelector('#user').addEventListener('change', function () {
   matching(user);
  
 });
+*/
+
+//Fetch the items from the JSON file
+function loadItems(){
+    return fetch('data/shortcuts.json')
+        .then(response => response.json())
+        .then(json => json.shortcuts);
+}
+
+//Update the list with the given items
+function displayItems(items){
+    const container = document.querySelector('#display');
+    container.innerHTML = createHTMLString(items);
+}
+
+//Create HTML list item from the given data item
+function createHTMLString(categories) {
+    const items = categories[0]
+    const item = items.largeCategories[0].smallCategories[0];
+
+    //tbody tag 초기화
+    let tbodyElementItems = '';
+
+    item.toolKey.forEach(key => {
+        //tbodyElementItems
+        tbodyElementItems +=`<tr>
+                                    <td>${key.shortcut}</td>
+                                    <td>${key.description}</td>
+                            </tr>`;
+    })
+
+    const elementItems=`
+        <caption>
+            <b>${item.toolName}</b>
+        </caption>
+        <thead>
+            <th>단축키</th>
+            <th>설명</th>
+        </thead>
+        <tbody>
+            ${tbodyElementItems}
+        </tbody>
+        `;
+    return elementItems;
+}
+
+loadItems().then( items => {
+                displayItems(items);
+                 });

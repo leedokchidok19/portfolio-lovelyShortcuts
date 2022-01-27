@@ -7,53 +7,57 @@
                   "smallNm": "IDE",
                   "smallCategories": [
                       {
+                          "toolVersion": "1.14",
                           "toolName": "bracket(브라켓)",
                           "toolKey": [
-                              {
-                                  "shortcut": "Ctrl+e",
-                                  "description": "빠른 편집"
-                              },
-                              {
-                                "shortcut": "Ctrl+Alt+p",
-                                "description": "실시간 미리보기"
-                              },
-                              {
-                                "shortcut": "Ctrl+Space",
-                                "description": "자동 완성"
-                              },
-                              {
-                                "shortcut": "Ctrl+w",
-                                "description": "현재 파일 닫기"
-                              },
-                              {
-                                "shortcut": "Ctrl+q",
-                                "description": "브라켓 종료"
-                              },
-                              {
-                                "shortcut": "Ctrl+l(소문자 L)",
-                                "description": "한 줄 선택"
-                              },
-                              {
-                                "shortcut": "Ctrl+d",
-                                "description": "줄 복사"
-                              },
-                              {
-                                "shortcut": "Ctrl+Shift+d",
-                                "description": "줄 삭제"
-                              },
-                              {
-                                "description": "자동 완성"
-                              },
-                              {
-                                "description": "여러 줄 주석"
-                              },
-                              {
-                                "shortcut": "Ctrl+Shift+↑,↓",
-                                "description": "행 위, 아래 이동"
-                              }
-                          ]
+                                {
+                                    "shortcut": "Ctrl+e",
+                                    "description": "빠른 편집"
+                                },
+                                {
+                                    "shortcut": "Ctrl+Alt+p",
+                                    "description": "실시간 미리보기"
+                                },
+                                {
+                                    "shortcut": "Ctrl+Space",
+                                    "description": "자동 완성"
+                                },
+                                {
+                                    "shortcut": "Ctrl+w",
+                                    "description": "현재 파일 닫기"
+                                },
+                                {
+                                    "shortcut": "Ctrl+q",
+                                    "description": "브라켓 종료"
+                                },
+                                {
+                                    "shortcut": "Ctrl+l(소문자 L)",
+                                    "description": "한 줄 선택"
+                                },
+                                {
+                                    "shortcut": "Ctrl+d",
+                                    "description": "줄 복사"
+                                },
+                                {
+                                    "shortcut": "Ctrl+Shift+d",
+                                    "description": "줄 삭제"
+                                },
+                                {
+                                    "shortcut": "Ctrl+/",
+                                    "description": "주석"
+                                },
+                                {
+                                    "shortcut": "Ctrl+Shift+/",
+                                    "description": "여러 줄 주석"
+                                },
+                                {
+                                    "shortcut": "Ctrl+Shift+↑,↓",
+                                    "description": "행 위, 아래 이동"
+                                }
+                        ]
                       },
                       {
+                          "toolVersion": "-",
                           "toolName": "vscode(비주얼스튜디오코드)",
                           "toolKey": [
                               {
@@ -72,6 +76,7 @@
                   "smallNm":"os",
                   "smallCategories": [
                       {
+                          "toolVersion": "-",
                           "toolName": "Linux(리눅스)",
                           "toolKey": [
                               {
